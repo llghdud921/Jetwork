@@ -5,4 +5,7 @@ public enum NetworkError: Error {
     case nonHTTPURLResponse(URLResponse?)
     case unacceptableStatusCode(Int)
     case unexpectedObject(Any)
+    case noData
+    case decoding
+    case response
 }
