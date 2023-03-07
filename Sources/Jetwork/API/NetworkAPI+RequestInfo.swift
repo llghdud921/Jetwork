@@ -5,7 +5,7 @@ public extension NetworkAPI {
     /// method, headers, parameter 와 같은 Reqeust 정보를 담는 타입.
     ///
     struct RequestInfo<T: Encodable> {
-        var method: HTTPMethod
+        let method: HTTPMethod
         var headers: [HTTPHeader]?
         var parameters: T?
 
